@@ -102,7 +102,7 @@
   .chat-lead-form { display: none; flex-direction: column; gap: 8px; padding: 0 18px 18px; }
   .chat-lead-form.open { display: flex; }
   .chat-lead-form input { padding: 10px 12px; border-radius: 10px; border: 1.5px solid #F3E6DC; font-size: 13px; font-family: 'Nunito', sans-serif; }
-  .footer { background: #3A2E27; color: #F3E6DC; padding: 56px 64px; display: flex; flex-direction: column; gap: 32px; }
+  .footer { background: #3A2E27; color: #F3E6DC; padding: 56px 64px 32px; display: flex; flex-direction: column; gap: 32px; }
   .footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 32px; }
   .footer-col-title { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 15px; color: #FFFFFF; margin: 0 0 4px 0; }
   .footer-link { font-size: 14px; color: #D9C8BC; position: relative; display: inline-flex; align-items: center; gap: 8px; width: fit-content; transition: color 0.25s ease, transform 0.25s ease; }
@@ -144,6 +144,7 @@
     .about > div:first-child img { height: 260px !important; }
     .chat-window { width: calc(100vw - 32px); right: 16px; bottom: 88px; }
     .chat-bubble { right: 16px; bottom: 16px; }
+    .hero > div { flex: 1 1 100% !important; min-width: 0 !important; }
   }
 
   /* ---- Small phone (≤380px) ---- */
@@ -154,7 +155,6 @@
   }
 
   /* ---- Prevent any horizontal overflow ---- */
-  html, body { max-width: 100%; overflow-x: hidden; }
 </style>
 </head>
 <body>
@@ -397,7 +397,7 @@
       <span style="font-size: 14px; color: #D9C8BC;">Castleknock, Dublin, Ireland</span>
     </div>
   </div>
-  <div style="border-top: 1px solid #4E4038; padding-top: 20px; font-size: 13px; color: #B7A79C;">
+  <div style="border-top: 1px solid #4E4038; padding: 20px 0; font-size: 13px; color: #B7A79C; text-align: center; display: flex; align-items: center; justify-content: center;">
     © ArtzforKids. All rights reserved.
   </div>
 </div>
